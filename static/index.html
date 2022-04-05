@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>My notepad in golang</title>
+</head>
+<body>
+  <h1 class="title">Привет, мой блокнотик</h1>
+  <section class="todos">
+    <div class="todo__row">
+      <p class="todo__item todo__item_bold">Название задачи</p>
+      <p class="todo__item todo__item_bold">Содержание</p>
+    </div>
+  </section>
+  <form action="/note" method="post" class="form" name="todo">
+    <label for="" class="form__item">
+      <p>Заголовок</p>
+      <input type="text" name="title">
+    </label>
+    <label for="" class="form__item">
+      <p>Содержание</p>
+      <textarea type="text" name="topic" rows="10" cols="50"></textarea>
+    </label>
+    <input type="submit" value="Добавить задачу" class="form__button">
+  </form>
+  <script src="./script.js"></script>
+</body>
+</html>
